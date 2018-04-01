@@ -1,0 +1,6 @@
+name: AdvancedAPI
+version: 1.0
+main: nl.mlgeditz.advancedapi.AdvancedAPI
+description: An API with alot of functions!
+author: MLGEditz
+website: http://www.mlgeditz.nl
