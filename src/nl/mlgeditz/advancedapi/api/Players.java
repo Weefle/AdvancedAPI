@@ -10,7 +10,7 @@ import org.bukkit.potion.PotionEffectType;
  * Created by MLGEditz and/or other contributors
  * No part of this publication may be reproduced,
  * distrubuted, of transmitted in any form or by any means.
- * Copyright © 22 mrt. 2018 2018 by MLGEditz
+ * Copyright Â© 22 mrt. 2018 2018 by MLGEditz
 */
 
 public class Players {
@@ -32,7 +32,7 @@ public class Players {
 	}
 	
 	public void setCustomName(Player p, String name) {
-		p.setCustomName(name.replaceAll("&", "§"));
+		p.setCustomName(name.replaceAll("&", "Â§"));
 		p.setDisplayName(name);
 		p.setCustomNameVisible(true);
 		p.setPlayerListName(name);
@@ -62,17 +62,7 @@ public class Players {
 	}
 	
 	public void changeGameMode(Player p, GameMode gm) {
-		if (gm.equals(GameMode.CREATIVE)) {
-			p.setGameMode(GameMode.CREATIVE);
-		} else if (gm.equals(GameMode.SURVIVAL)) {
-			p.setGameMode(GameMode.SURVIVAL);
-		} else if (gm.equals(GameMode.SPECTATOR)) {
-			p.setGameMode(GameMode.SPECTATOR);
-		} else if (gm.equals(GameMode.ADVENTURE)) {
-			p.setGameMode(GameMode.ADVENTURE);
-		} else {
-			return;
-		}
+		p.setGameMode(gm);
 	}
 	
 	public void giveItem(Player p, ItemStack item) {
